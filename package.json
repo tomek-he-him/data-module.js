@@ -15,9 +15,9 @@
   }
 
 , "dependencies":
-  { "format-json": "1.0.3"
-  , "indent-string": "1.2.0"
-  , "trimmer": "1.0.0"
-  , "extend": "2.0.0"
+  { "format-json": "~1.0.3"
+  , "indent-string": "~1.2.0"
+  , "trimmer": "~1.0.0"
+  , "extend": "~2.0.0"
   }
 }
