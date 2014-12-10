@@ -13,4 +13,8 @@
   { "type": "git"
   , "url": "https://github.com/tomekwi/data-module.git"
   }
+
+, "dependencies":
+  { "format-json": "1.0.3"
+  }
 }
