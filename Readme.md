@@ -41,14 +41,14 @@ API
 ### dataModule(data, options)
 
 #### data
-> **Required**
+> **Required**  
 > Type: `any`
 
 The data to be wrapped in a module.
 
 
 #### options.formatting(data)
-> Type: `Function`
+> Type: `Function`  
 > Default: JSON.stringify
 
 The formatting function. When passed the `data`, it should return its representation in valid JavaScript code.
