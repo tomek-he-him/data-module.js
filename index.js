@@ -10,7 +10,7 @@ var dataModule = function dataModule (data, options) { 'use strict';
 
     var formattedData = formatting(data);
     return new DataModule(
-        ( 'exports default'
+        ( 'export default'
         + ( /^\s/.test(formattedData)
           ? ''
           : ' '
