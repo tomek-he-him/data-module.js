@@ -1,0 +1,16 @@
+{ "name": "…"
+, "version": "0.0.0"
+, "description": "…"
+, "license": "MIT"
+
+, "contributors":
+  [ { "name": "Tomek Wiszniewski"
+    , "email": "<t.wiszniewski@gmail.com>"
+    }
+  ]
+
+, "repository":
+  { "type": "git"
+  , "url": "https://github.com/tomekwi/….git"
+  }
+}
