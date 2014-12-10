@@ -26,9 +26,10 @@ dataModule(
     { object: 'with'
     , some: ['important', 'data']
     }).toString();
+    
 // Outputs String: >
 //     export default {"object":"with","some":["important","data"]};
-}
+//
 ```
 
 
