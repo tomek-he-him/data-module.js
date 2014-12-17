@@ -54,7 +54,7 @@ The data to be wrapped in a module.
 
 The formatting function. When passed the original `data`, it should return its representation in valid JavaScript code.
 
-We ship the function `dataModule.diffy([options])(data)`, which you can use here. The default value for `options` is `{indentString: '  '}`. We use [format-json][]'s diffy formatter to generate the output.
+We ship the function `dataModule.formatting.diffy([options])(data)`, which you can use here. The default value for `options` is `{indentString: '  '}`. We use [format-json][]'s diffy formatter to generate the output.
 
 
 

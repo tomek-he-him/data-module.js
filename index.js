@@ -1,5 +1,5 @@
 var formatJSON = require('format-json');
-var indentedString = require('indent-string');
+var indentString = require('indent-string');
 var trim = require('trimmer');
 var extend = require('extend');
 
@@ -21,18 +21,19 @@ var dataModule = function dataModule (data, options) { 'use strict';
         ));
     };
 
+dataModule.formatting =
+    { diffy: function diffy (options) { 'use strict';
+        if (!options) options = {};
+        var indentStringOption = ( typeof options.indentString != 'undefined'
+                                 ? '' + options.indentString
+                                 : '  '
+                                 );
 
-dataModule.diffy = function (options) { 'use strict';
-    if (!options) options = {};
-    var indentString = ( options.indentString !== undefined
-                       ? options.indentString
-                       : '  '
-                       );
-
-    return function (data) {
-        var formattedData = formatJSON.diffy(data);
-        return '\n' + indentedString(formattedData, indentString);
-        };
+        return function (data) {
+            var formattedData = formatJSON.diffy(data);
+            return '\n' + indentString(formattedData, indentStringOption);
+            };
+        }
     };
 
 
